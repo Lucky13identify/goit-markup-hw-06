@@ -1,3 +1,3 @@
-current page
-svg
-borders
+smartphone svg
+icon x svg
+форма
