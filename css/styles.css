@@ -685,6 +685,12 @@ img {
   outline: transparent;
   padding-left: 16px;
   color: var(--white-text-color);
+  transition: border-color 250ms var(--cubic);
+}
+.mailing-list:focus,
+.mailing-list:hover {
+  border-color: var(---main-blue-color);
+  cursor: pointer;
 }
 .button-miling {
   background-color: var(---main-blue-color);
@@ -703,6 +709,11 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-text-color);
   cursor: pointer;
+  transition: background-color 250ms var(--cubic);
+}
+.button-miling:focus,
+.button-miling:hover {
+  background-color: var(--button-hover);
 }
 .mail-flex {
   display: flex;
@@ -738,6 +749,7 @@ img {
   top: 32px;
   left: 12px;
   fill: var(--web-color);
+  transition: fill 250ms var(--cubic);
 }
 .field-name-svg:hover {
   fill: var(---main-blue-color);
@@ -791,6 +803,7 @@ textarea {
   height: 120px;
   resize: none;
   outline: transparent;
+  transition: border-color 250ms var(--cubic);
 }
 
 input:focus + .field-name-svg,
@@ -825,6 +838,9 @@ textarea:focus {
   width: 448px;
   height: 40px;
   outline: transparent;
+  cursor: pointer;
+  padding-left: 42px;
+  transition: border-color 250ms var(--cubic);
 }
 .checkbox {
   -webkit-appearance: none;
