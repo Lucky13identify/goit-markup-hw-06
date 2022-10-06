@@ -12,9 +12,7 @@
   --links-color: #afb1b8;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*Raleway - sans-serif*/
-/* Oleo Script -decorative fonts*/
-/*Roboto- sans-serif*/
+
 li {
   list-style-type: none;
 }
@@ -540,6 +538,9 @@ img {
   justify-content: center;
   margin-top: 20px;
 }
+.enter.mail {
+  margin-bottom: 20px;
+}
 .link.end {
   margin-right: 0px;
 }
@@ -644,16 +645,18 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 .backdrop-button {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-left: 490px;
   background: var(--white-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -669,7 +672,7 @@ img {
 }
 
 .box-mailing {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .mailing-list {
   display: block;
@@ -678,8 +681,10 @@ img {
   border-radius: 4px;
   width: 358px;
   height: 50px;
-  margin-top: 20px;
   background-color: var(--background-color-footer);
+  outline: transparent;
+  padding-left: 16px;
+  color: var(--white-text-color);
 }
 .button-miling {
   background-color: var(---main-blue-color);
@@ -687,7 +692,6 @@ img {
   border-color: transparent;
   width: 200px;
   height: 50px;
-  margin-top: 20px;
   margin-left: 12px;
   padding-left: 28px;
   font-weight: 700;
@@ -710,17 +714,14 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  margin-left: 40px;
   position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  margin-right: 40px;
 }
 
 .form-head {
-  margin-top: 40px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -744,10 +745,13 @@ img {
 .conditions-input {
   position: relative;
   margin-top: 20px;
-  margin-left: 76px;
   color: var(--secondary-text-color);
 }
 .conditions-field {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -758,7 +762,7 @@ img {
   text-decoration: underline;
 }
 .button-field {
-  display: inline-block;
+  display: block;
   align-items: center;
   font-weight: 700;
   font-size: 16px;
@@ -771,9 +775,8 @@ img {
   color: var(--white-text-color);
   width: 200px;
   height: 50px;
+  margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: 165px;
   cursor: pointer;
   transition: background-color 250ms var(--cubic);
 }
@@ -787,11 +790,7 @@ textarea {
   width: 448px;
   height: 120px;
   resize: none;
-}
-input {
-  position: relative;
-  padding-left: 40px;
-  cursor: pointer;
+  outline: transparent;
 }
 
 input:focus + .field-name-svg,
@@ -825,6 +824,7 @@ textarea:focus {
   border-radius: 4px;
   width: 448px;
   height: 40px;
+  outline: transparent;
 }
 .checkbox {
   -webkit-appearance: none;
@@ -835,7 +835,7 @@ textarea:focus {
 .check-box {
   width: 16px;
   height: 15px;
-  position: absolute;
+  position: block;
   left: -25px;
   top: 4px;
   cursor: pointer;
